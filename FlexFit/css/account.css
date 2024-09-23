@@ -1,0 +1,138 @@
+
+/* ------------------------------------------------------- Account Styling -------------------------------------------- */
+/*Form styling */
+.acc-log {
+  width: 35%;
+  background: rgb(93, 155, 210);
+  padding: 15px 40px 40px;
+  border: 1px solid #ccc;
+  margin: auto;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  border-radius: 5px;
+}
+
+.acc-edit {
+  width: 50%;
+  background: rgb(93, 155, 210);
+  padding: 15px 40px 40px;
+  border: 1px solid #ccc;
+  margin: auto;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  border-radius: 5px;
+}
+
+.reg-name {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+form h2 {
+  text-align: center;
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+  font-size: large;
+}
+
+input,
+select {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 2px;
+  margin-bottom: 30px;
+}
+
+/*page title*/
+.account-title {
+  text-align: center;
+  color: var(--account-title)
+}
+
+/*account buttons */
+.reset {
+  margin-left: 30%;
+  margin-top: -2%;
+
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: rgb(250, 250, 250);
+}
+
+.reset:hover {
+  background-color: rgb(87, 84, 247);
+  color: white;
+}
+
+.submit {
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: rgb(250, 250, 250);
+}
+
+.submit:hover {
+  background-color: rgb(87, 84, 247);
+  color: white;
+}
+
+/* Registration form error and success */
+.content-container .error {
+  color: #ff0000;
+  font-size: 14px;
+}
+
+.content-container.success input {
+  border-color: #129700;
+}
+
+.content-container.error input {
+  border-color: #ff0000;
+}
+
+/* Account parent*/
+.profile-container {
+  justify-content: center;
+  align-items: center;
+
+  margin: 50px 25% 50px 25%;
+  padding: 20px;
+  background-color: #444c4e;
+}
+
+.profile-image img {
+  max-width: 161px;
+  max-height: 161px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.block1, 
+.block2, 
+.block3 {
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  width: 65%;
+}
+
+.profile-head {
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.logOption button {
+  margin-top: 15px;
+}

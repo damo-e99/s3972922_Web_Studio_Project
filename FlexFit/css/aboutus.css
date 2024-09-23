@@ -1,0 +1,107 @@
+/* About Us Section */
+.about-us {
+    color: aqua;
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+  }
+  
+  .img1 {
+    width: 50%;
+    height: 60vh;
+    margin-left: 5%;
+    margin-top: -500px;
+  }
+  
+  .img3{
+    width: 50%;
+    height: 60vh;
+    margin-left: 5%;
+    margin-top: -550px;
+  }
+  
+  .img2 {
+    width: 50%;
+    height: 60vh;
+    margin-left: 5%;
+  }
+  
+  .about-us div {
+    padding-left: 50px;
+    margin-right: 10%;
+  }
+  
+  .about-us marquee {
+    background-color: rgb(87, 84, 247);
+    color: white;
+    height: 30px;
+    font-weight: bold;
+  }
+  .about-us p{
+    color: white;
+  }
+  
+  
+  /* Features Section */
+  .features-us {
+    color: aqua;
+    text-align: center;
+    justify-content: space-between;
+  }
+  
+  .features-container-us {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .features-container-us h2 {
+    text-align: center;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  .card-us {
+    width: 280px;
+    height: 280px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+  }
+  
+  .card-us h2 {
+    padding: 8px 6px;
+    line-height: 1;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(87, 84, 247);
+  }
+  
+  .feature-img-us {
+    height: 80%;
+    width: 90%;
+    background-size: cover;
+    border-radius: 15px;
+  }
+  
+  .image1-us {
+    background-image: url("../images/Home/Features/delivery.png");
+  }
+  
+  .image2-us {
+    background-image: url("../images/Home/Features/online.png");
+  }
+  
+  .image3-us {
+    background-image: url("../images/Home/Features/support.png");
+  }
+  
+  .image4-us {
+    background-image: url("../images/Home/Features/money.png");
+  }
+  
+  .image5-us {
+    background-image: url("../images/Home/Features/quality.png");
+  }
+  

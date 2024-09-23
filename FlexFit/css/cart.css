@@ -1,0 +1,157 @@
+/* ------------------------------------------------------- Cart Styling -------------------------------------------- */
+body {
+  color: var(--cart-colour);
+}
+
+#cart-content {
+  margin: 80px auto;
+}
+
+#cart-content table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+table thead {
+  border: 2px solid var(--cart-colour);
+  border-left: none;
+  border-right: none;
+}
+
+th {
+  font-weight: bold;
+  font-size: large;
+  padding: 20px 0;
+  text-align: left;
+  color: var(--cart-colour);
+}
+
+.product-det {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+td {
+  padding: 10px 5px;
+}
+
+td input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+
+td img {
+  width: 300px;
+  height: 300px;
+  margin-right: 10px;
+  padding-right: 30px;
+}
+
+th:last-child,
+td:last-child {
+  text-align: right;
+}
+
+
+/* ------------------------------------------------------- Single Product -------------------------------------------- */
+
+h3,
+.price,
+.subtotal {
+  color: var(--cart-colour);
+}
+
+.wrapper {
+  height: 50px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFF;
+  color: black;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper span {
+  width: 100%;
+  text-align: center;
+  font-size: 55px;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+
+.wrapper span.num {
+  font-size: 12px;
+  border-right: 2px solid rgba(0, 0, 0, 0.2);
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+}
+
+.wrapper span.plus,
+span.minus {
+  font-size: 12px;
+
+}
+
+/* Cart total Price*/
+.cart-total {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cart-total table {
+  border-top: 3px solid var(--cart-colour);
+  max-width: 400px;
+}
+
+.proceed button {
+  border-radius: 15px;
+  margin: 20px;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-weight: 700;
+  margin-left: 80%;
+}
+
+.proceed button:hover {
+  background-color: rgb(87, 84, 247);
+  color: white;
+}
+
+
+.wrapper {
+  height: 50px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFF;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper span {
+  width: 100%;
+  text-align: center;
+  font-size: 55px;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+
+.wrapper span.num {
+  font-size: 12px;
+  border-right: 2px solid rgba(0, 0, 0, 0.2);
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+}
+
+.wrapper span.plus,
+span.minus {
+  font-size: 12px;
+}

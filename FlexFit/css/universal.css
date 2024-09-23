@@ -1,0 +1,421 @@
+/* ------------------------------------------------------- Universal Styling -------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: 0px;
+  background: var(--background-color) !important;
+  overflow-x: hidden;
+  transition: background 1s, colour 1s;
+}
+
+/* ------------------------------------------------------- Page Themes -------------------------------------------- */
+/* Light + Dark Mode */
+#theme {
+  margin: auto;
+  margin-left: 30px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+:root {
+  /* Dark/Base Mode */
+  --navfoot-color: rgb(72, 71, 71);
+  --foot-text: white;
+  --background-color: rgb(105, 105, 105);
+  --shop-colour:white;
+  --shop-search: aqua;
+  --cart-colour: white;
+  --admin-add: white;
+  --admin-form: white;
+  --account-title: white;
+}
+
+.dark-mode {
+  /* Light Mode */
+  --navfoot-color: rgb(72, 71, 71);
+  --foot-text: white;
+  --background-color: rgb(207, 206, 206);
+  --shop-colour:black;
+  --shop-search: black;
+  --cart-colour: black;
+  --admin-add: black;
+  --admin-form: black;
+  --account-title: black;
+  
+}
+
+/* ------------------------------------------------------- Top Nav -------------------------------------------- */
+/* Style the top navigation bar */
+.navbar {
+  background: var(--navfoot-color);
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+/* Style the topnav links */
+#topnav,
+#iconNav {
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+}
+
+#topnav li,
+#iconNav li {
+  list-style: none;
+  padding: 0px 20px;
+  position: relative;
+}
+
+#topnav li a,
+.logo {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease 0s;
+}
+
+/* Change color on hover */
+#topnav li a:hover,
+#topnav li a.animate {
+  color: rgb(87, 84, 247);
+}
+
+#topnav li a.animate::after,
+#topnav li a:hover::after {
+  content: "";
+  width: 25%;
+  height: 3px;
+  background: rgb(87, 84, 247);
+  position: absolute;
+  left: 20px;
+  bottom: -4px;
+}
+
+#iconNav li a:hover,
+#iconNav li a.animate {
+  color: rgb(87, 84, 247);
+}
+
+#iconNav li a.animate::after,
+#iconNav li a:hover::after {
+  content: "";
+  width: 25%;
+  height: 3px;
+  background: rgb(87, 84, 247);
+  position: absolute;
+  left: 20px;
+  bottom: -4px;
+}
+
+.navpfp {
+  max-height: 30px;
+}
+
+/* Style the dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style the dropdown menu */
+.dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  color: rgb(255, 255, 255);
+  /* Background color for the dropdown */
+  min-width: 120px;
+  /* Adjust the width as needed */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  /* Add a shadow for the dropdown */
+  z-index: 1;
+}
+
+/* Style the dropdown menu items */
+.dropdown .dropdown-menu li {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Style the dropdown menu items on hover */
+.dropdown .dropdown-menu li:hover {
+  background-color: #f2f2f2;
+  /* Background color on hover */
+}
+
+/* Show the dropdown menu when hovering over the dropdown */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* CSS for Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown a {
+  display: flex;
+  align-items: center;
+  color: rgb(57, 59, 59);
+  /* Aqua text color */
+  text-decoration: none;
+}
+
+.dropdown ul.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  /* White background color */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 255, 255, 0.2);
+  /* Bluish box shadow */
+  z-index: 1;
+  border-radius: 5px;
+  padding: 0;
+}
+
+.dropdown ul.dropdown-menu li {
+  padding: 8px 12px;
+  display: block;
+  color: aqua;
+  /* Aqua text color */
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.dropdown ul.dropdown-menu li:hover {
+  color: white;
+  /* White text color on hover */
+}
+
+/* Style your icon and adjust alignment */
+.dropdown a img {
+  margin-right: 5px;
+  /* Add some spacing between the icon and text */
+}
+
+/* Add hover effect to the icon as well */
+.dropdown a img:hover {
+  filter: invert(25%);
+  /* Slight color inversion on hover */
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* ------------------------------------------------------- Burger Menu -------------------------------------------- */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-around;
+
+  top: .75rem;
+  right: 1rem;
+  width: 30px;
+  height: 20px;
+}
+
+.hamburger .navline {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media(max-width:1000px) {
+  .hamburger{
+    display: flex;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #topnav,
+  #iconNav {
+    display: none;
+  }
+
+  #topnav.active{
+    margin-right: auto;
+    margin-left: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+  } 
+
+  #topnav.active li {
+    padding: 20px;
+  }
+
+  #iconNav.active {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+  }
+}
+
+/* ------------------------------------------------------- Footer -------------------------------------------- */
+/* Style the footer */
+.footer {
+  position: relative;
+  margin-top: 50px;
+  background: var(--navfoot-color);
+  width: 100%;
+  color: var(--foot-text);
+  padding: 100px 0 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.col p {
+  color: var(--foot-text);
+}
+
+.logo2 {
+  width: 70%;
+}
+
+.email-id {
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.footer ul li {
+  list-style: none;
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer ul li a:hover {
+  color: rgb(101, 84, 247);
+}
+
+.assignment-footer {
+  text-align: center;
+  color: var(--foot-text);
+}
+
+/* ------------------------------------------------------- Page Banners -------------------------------------------- */
+
+/* Page Banners */
+/* About Page */
+.banner-about {
+  background-image: url(../images/About/aboutusbanner.jpg);
+  width: 100%;
+  height: 77vh;
+  display: flex;
+  background-size: cover;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin-bottom: 90px;
+}
+
+.banner-about h2 {
+  text-align: center;
+  color: aqua;
+  font-size: 38px;
+}
+
+.banner-about p {
+  text-align: center;
+  color: aqua;
+  font-size: 38px;
+}
+
+/* Contact Page */
+.banner-contact {
+  background-image: url(../images/Contact/contactusbanner.jpg);
+  width: 100%;
+  height: 70%;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin-bottom: 90px;
+  margin-top: -20px;
+}
+
+.banner-contact h2 {
+  text-align: center;
+  color: dark gray;
+  font-size: 38px;
+}
+
+.banner-contact p {
+  text-align: center;
+  color: dark gray;
+  font-size: 38px;
+}
+
+/* Membership Page */
+.banner-member {
+  background-image: url(../images/About/membershipbanner.jpg);
+  width: 100%;
+  height: 70%;
+  display: flex;
+  background-size: cover;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin-bottom: 90px;
+  margin-top: -20px;
+}
+
+.banner-member h2 {
+  text-align: center;
+  color: white;
+}
+
+.banner-member p {
+  text-align: center;
+  color: white;
+}
+

@@ -1,0 +1,1422 @@
+/* ------------------------------------------------------- Universal Styling -------------------------------------------- */
+html,
+body {
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 0px;
+  background: var(--background-color) !important;
+  overflow-x: hidden;
+}
+
+/* Light + Dark Mode */
+#theme {
+  margin: auto;
+  margin-left: 30px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+:root {
+  /* Light Mode */
+  --navfoot-color: rgb(190, 189, 189);
+  --background-color: rgb(58, 59, 60);
+}
+
+.dark-mode {
+  /* Dark Mode */
+  --navfoot-color: #8995d4;
+  --background-color: rgb(207, 206, 206);
+}
+
+/* Style the top navigation bar */
+.navbar {
+  background: var(--navfoot-color);
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+/* Style the topnav links */
+#topnav,
+#iconNav {
+  font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+}
+
+#topnav li,
+#iconNav li {
+  list-style: none;
+  padding: 0px 20px;
+  position: relative;
+}
+
+#topnav li a,
+.logo {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(0, 255, 255);
+  transition: all 0.3s ease 0s;
+}
+
+/* Change color on hover */
+#topnav li a:hover,
+#topnav li a.animate {
+  color: rgb(87, 84, 247);
+}
+
+#topnav li a.animate::after,
+#topnav li a:hover::after {
+  content: "";
+  width: 25%;
+  height: 3px;
+  background: rgb(87, 84, 247);
+  position: absolute;
+  left: 20px;
+  bottom: -4px;
+}
+
+#iconNav li a:hover,
+#iconNav li a.animate {
+  color: rgb(87, 84, 247);
+}
+
+#iconNav li a.animate::after,
+#iconNav li a:hover::after {
+  content: "";
+  width: 25%;
+  height: 3px;
+  background: rgb(87, 84, 247);
+  position: absolute;
+  left: 20px;
+  bottom: -4px;
+}
+
+/* Style the dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style the dropdown menu */
+.dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  color: black;
+  /* Background color for the dropdown */
+  min-width: 120px;
+  /* Adjust the width as needed */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  /* Add a shadow for the dropdown */
+  z-index: 1;
+}
+
+/* Style the dropdown menu items */
+.dropdown .dropdown-menu li {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Style the dropdown menu items on hover */
+.dropdown .dropdown-menu li:hover {
+  background-color: #f2f2f2;
+  /* Background color on hover */
+}
+
+/* Show the dropdown menu when hovering over the dropdown */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+/* Style the footer */
+.footer {
+  position: relative;
+  margin-top: 50px;
+  background: var(--navfoot-color);
+  width: 100%;
+  color: #080808;
+  padding: 100px 0 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.col p {
+  color: black;
+}
+
+.logo2 {
+  width: 70%;
+}
+
+.email-id {
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.footer ul li {
+  list-style: none;
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer ul li a:hover {
+  color: rgb(101, 84, 247);
+}
+
+.assignment-footer {
+  text-align: center;
+  color: black
+}
+
+/* CSS for Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown a {
+  display: flex;
+  align-items: center;
+  color: aqua;
+  /* Aqua text color */
+  text-decoration: none;
+}
+
+.dropdown ul.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  /* White background color */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 255, 255, 0.2);
+  /* Bluish box shadow */
+  z-index: 1;
+  border-radius: 5px;
+  padding: 0;
+}
+
+.dropdown ul.dropdown-menu li {
+  padding: 8px 12px;
+  display: block;
+  color: aqua;
+  /* Aqua text color */
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.dropdown ul.dropdown-menu li:hover {
+  color: white;
+  /* White text color on hover */
+}
+
+/* Style your icon and adjust alignment */
+.dropdown a img {
+  margin-right: 5px;
+  /* Add some spacing between the icon and text */
+}
+
+/* Add hover effect to the icon as well */
+.dropdown a img:hover {
+  filter: invert(25%);
+  /* Slight color inversion on hover */
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Page Banners */
+/* About Page */
+.banner-about {
+  background-image: url(../images/About/about_banner.jpg);
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  background-size: cover;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin-bottom: 90px;
+}
+
+.banner-about h2 {
+  text-align: center;
+  color: white;
+}
+
+.banner-about p {
+  text-align: center;
+  color: white;
+}
+
+/* Contact Page */
+.banner-contact {
+  background-image: url(../images/About/contact_banner.avif);
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  background-size: cover;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin-bottom: 90px;
+}
+
+.banner-contact h2 {
+  text-align: center;
+  color: white;
+}
+
+.banner-contact p {
+  text-align: center;
+  color: white;
+}
+
+/* Membership Page */
+.banner-member {
+  background-image: url(../images/About/membership_banner.png);
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  background-size: cover;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin-bottom: 90px;
+  margin-top: -20px;
+}
+
+.banner-member h2 {
+  text-align: center;
+  color: white;
+}
+
+.banner-member p {
+  text-align: center;
+  color: white;
+}
+
+/*
+/* ------------------------------------------------------- Home Styling -------------------------------------------- */
+
+/* Hero Section + Slider*/
+.hero {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px 150px;
+  color: white;
+
+  background-image: url("../images/Home/Main/fitness.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: right 10%;
+}
+
+.hero-2 {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px 150px;
+  color: white;
+
+  background-image: url("../images/Home/Main/hero.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: right 10%;
+}
+
+.hero-3 {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px 150px;
+  color: white;
+
+  background-image: url("../images/Home/Main/fitness.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: right 10%;
+}
+
+.hero h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.hero-2 h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.hero-3 h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.hero p {
+  color: white;
+}
+
+.hero-2 p {
+  color: white;
+}
+
+.hero-3 p {
+  color: white;
+}
+
+.hero button {
+  border-radius: 15px;
+  margin: 20px;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.hero-2 button {
+  border-radius: 15px;
+  margin: 20px;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.hero-3 button {
+  border-radius: 15px;
+  margin: 20px;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.hero button:hover {
+  background-color: rgb(87, 84, 247);
+  color: white;
+}
+
+.hero-2 button:hover {
+  background-color: rgb(87, 84, 247);
+  color: white;
+}
+
+.hero-3 button:hover {
+  background-color: rgb(87, 84, 247);
+  color: white;
+}
+
+/* Homepage slider*/
+.radio {
+  display: none;
+}
+
+.hero-container {
+  display: flex;
+  top: 0;
+  height: 100vh;
+  max-width: 100%;
+}
+
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  /*display: flex;
+  animation: slide 5s infinite; */
+}
+
+/*
+@keyframes slide{
+  0%{
+      transform: translateX(0);
+  }
+  25%{
+      transform: translateX(0);
+  }
+  30%{
+      transform: translateX(-100%);
+  }
+  50%{
+      transform: translateX(-100%);
+  }
+  55%{
+      transform: translateX(-200%);
+  }
+  75%{
+      transform: translateX(-200%);
+  }
+  80%{
+      transform: translateX(-300%);
+  }
+  100%{
+      transform: translateX(-300%);
+  }
+} */
+
+
+/*slider navigation*/
+.bar {
+  width: 100%;
+  position: absolute;
+  bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar label {
+  width: 50px;
+  height: 10px;
+  border: 2px solid;
+  background: #fff;
+  margin: 0 10px;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.bar label:hover {
+  opacity: 1;
+  background: #fff;
+}
+
+/*slider interaction*/
+#radio-1:checked~#slide-1,
+#radio-2:checked~#slide-2,
+#radio-3:checked~#slide-3 {
+  opacity: 1;
+}
+
+#radio-1:checked~#slide-1 img,
+#radio-2:checked~#slide-2 img,
+#radio-3:checked~#slide-3 img {
+  transform: scale(1);
+}
+
+#radio-1:checked~#slide-1 .caption,
+#radio-2:checked~#slide-2 .caption,
+#radio-3:checked~#slide-3 .caption {
+  opacity: 1;
+  top: 45%;
+  left: 50;
+  font-size: 50px;
+  text-align: center;
+  transform: scale(1);
+}
+
+#radio-1:checked~.bar label-1,
+#radio-2:checked~.bar label-2,
+#radio-3:checked~.bar label-3 {
+  background: #00d5ff;
+  opacity: 1;
+}
+
+/* Best Sellers Section */
+.bestsellers {
+  text-align: center;
+  margin: 90px;
+}
+
+.bestsellers h1 {
+  color: aqua;
+  font-size: 50px;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+}
+
+.product h2,
+p {
+  color: #fff;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.price {
+  color: #fff !important;
+  text-align: left;
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.product {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  width: 400px;
+  height: 550px;
+  margin: 20px;
+}
+
+.product-img {
+  height: 50%;
+  width: 75%;
+  padding: 10px;
+  margin: 25px;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.product button {
+  border-radius: 15px;
+  margin: 20px;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: rgb(0, 255, 255);
+}
+
+.product button:hover {
+  background-color: rgb(87, 84, 247);
+  color: white;
+}
+
+/* About Us Section */
+.about {
+  color: aqua;
+  display: flex;
+  align-items: center;
+  margin-bottom: 90px;
+}
+
+.about img {
+  width: 50%;
+  height: 60vh;
+  margin-left: 5%;
+}
+
+.about div {
+  padding-left: 50px;
+  margin-right: 10%;
+}
+
+.about marquee {
+  background-color: rgb(87, 84, 247);
+  color: white;
+  height: 30px;
+  font-weight: bold;
+}
+
+/* Features Section */
+.features {
+  color: aqua;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.features-container {
+  display: flex;
+  justify-content: center;
+}
+
+.features-container h2 {
+  text-align: center;
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.card {
+  width: 280px;
+  height: 280px;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid black;
+}
+
+.card h2 {
+  padding: 8px 6px;
+  line-height: 1;
+  border-radius: 4px;
+  color: white;
+  background-color: rgb(87, 84, 247);
+}
+
+.feature-img {
+  height: 80%;
+  width: 90%;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.image1 {
+  background-image: url("../images/Home/Features/delivery.png");
+}
+
+.image2 {
+  background-image: url("../images/Home/Features/online.png");
+}
+
+.image3 {
+  background-image: url("../images/Home/Features/support.png");
+}
+
+.image4 {
+  background-image: url("../images/Home/Features/money.png");
+}
+
+.image5 {
+  background-image: url("../images/Home/Features/quality.png");
+}
+
+/* BMI calculator Section */
+.bmi-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 90px
+
+}
+
+.calculator{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 50px;
+  box-shadow: 0px 0px 20px 10px   #00FFFF;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.calculator h1{ 
+  margin-bottom: 40px;
+  color:#00FFFf;
+}
+
+.calculator input{
+  border: none;
+  border-bottom: 1px solid #00FFFf;
+  width: 50%;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.calculator button {
+  border-radius: 15px;
+  margin: 20px;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 25px;
+  border-radius: 20px;
+  border: none;
+  background-color: #00FFFf;
+}
+
+.calculator button:hover {
+  background-color: rgb(87, 84, 247);
+  color: white;
+}
+
+.calculator #result{
+  margin-top: 20px;
+  font-size: 25px;
+  color: #00FFFf;
+}
+
+
+/* News Section */
+.news {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(87, 84, 247);
+}
+
+.news h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 18px;
+  color: white;
+}
+
+.news p {
+  font-weight: bold;
+  align-items: left;
+  color: white;
+}
+
+.news p span {
+  font-weight: bold;
+  align-items: left;
+  color: rgb(255, 213, 0);
+}
+
+/* Style the email input */
+.news .form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+  background-color: white;
+  color: #3A3B3C;
+  /* Dark gray text color */
+}
+
+/* Style the submit button */
+.news .form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #3A3B3C;
+  /* Dark gray background color */
+  color: white;
+  /* Aqua text color */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Change the button color on hover */
+.news .form button:hover {
+  background-color: rgb(0, 255, 255);
+  /* Dark blue on hover */
+}
+
+
+/* ------------------------------------------------------- Shop Styling -------------------------------------------- */
+
+.container-heading {
+  text-align: center;
+  color: white;
+}
+
+/*Product Navigation/filter*/
+/*Search bar custom */
+form {
+  background-color: rgb(87, 84, 247) !important;
+  /* dark blue background color */
+  padding: 15px;
+  /* Added some padding for better aesthetics */
+} 
+
+.product-nav {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.search-bar {
+  width: 40%;
+  margin-right: 90px;
+}
+
+.sort-by {
+  width: 30%;
+  height: 70%;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  color: aqua;
+  /* Aqua text color */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#psearch {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid white;
+  /* white border color */
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#psearch:focus {
+  outline: none;
+  border-color: rgb(87, 84, 247);
+  /* dark blue blue focus color */
+}
+
+.text-center {
+  text-align: center;
+  background-color: aqua;
+  padding: 20px;
+  color: #3A3B3C;
+  /* Dark gray text color */
+}
+
+/* CSS for product card */
+.product-card {
+  flex-basis: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* Add this to hide overflowing content */
+}
+
+.product-card .card {
+  font-weight: bold;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 1);
+  /* Add a subtle blurry shadow with an aqua color */
+  /* Ensure the card takes up the full height */
+}
+
+.product-card .card .product-details {
+  color: white;
+  /* Change text color to white */
+}
+
+.product-card .card .product-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: fill;
+  display: block;
+  padding: 0;
+}
+
+.product-card .card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-card .card-title {
+  font-weight: bold;
+}
+
+.product-card .card-price {
+  color: #f9f9f9;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+.product-card .add-to-cart {
+  background-color: white;
+  color: #3A3B3C;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  /* Push the button to the bottom of the card */
+}
+
+.product-card .add-to-cart:hover {
+  background-color: rgb(87, 84, 247);
+  /* Change background color to blue on hover */
+  color: white;
+  /* Change text color to white on hover */
+}
+
+/* ------------------------------------------------------- Product Window -------------------------------------------- */
+
+.product-window  {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.product-window img {
+  width: 75%;
+  height: 75%;
+
+  background-color: white;
+  border: #080808;
+  border-radius: 15px;
+
+  margin-top: 60px;
+  margin-left: 10%;
+}
+
+.product-name {
+  text-align: center;
+  color: white;
+}
+
+.price-tag {
+  font-size: larger;
+  font-weight: bolder;
+}
+.prod-info {
+  margin-top: 20%;
+  width: 75%;
+}
+
+.single-add {
+  margin-left: -10px;
+  padding: 0%;
+  background-color: transparent;
+  border: 0;
+  border-radius: 20px;
+  width: 20%;
+}
+.single-add input{
+  background-color: #00FFFF;
+  color: #3A3B3C;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.single-add input:hover{
+  background-color: rgb(87, 84, 247);
+  /* Change background color to blue on hover */
+  color: white;
+  /* Change text color to white on hover */
+}
+
+/* ------------------------------------------------------- Single Product -------------------------------------------- */
+.wrapper {
+  height: 50px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFF;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper span {
+  width: 100%;
+  text-align: center;
+  font-size: 55px;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+
+.wrapper span.num {
+  font-size: 12px;
+  border-right: 2px solid rgba(0, 0, 0, 0.2);
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+}
+
+.wrapper span.plus,
+span.minus {
+  font-size: 12px;
+
+}
+
+.add-to-cart {
+  background-color: #00FFFF;
+  color: #3A3B3C;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* ------------------------------------------------------- Contact Styling -------------------------------------------- */
+.contact-det {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: aqua;
+}
+
+.map {
+  border: solid 2px black;
+  margin-right: 10%;
+}
+
+.details {
+  margin-left: 10%;
+  width: 30%;
+}
+
+.details li {
+  list-style: none;
+  display: flex;
+  text-align: left;
+  margin: 10px;
+  color: white;
+}
+
+.details img {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  margin-top: -17px;
+}
+
+/*Form Styling*/
+body {
+  font-size: 16px;
+  background: #f9f9f9;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+form {
+  width: 70%;
+  background: #fff;
+  padding: 15px 40px 40px;
+  border: 1px solid #ccc;
+  margin: auto;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  border-radius: 5px;
+}
+
+form h2 {
+  text-align: center;
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+}
+
+input,
+select {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 2px;
+  margin-bottom: 30px;
+}
+
+.form-inline {
+  border: 1px solid #ccc;
+  padding: 8px 10px 4px;
+  border-radius: 2px;
+}
+
+.form-inline label,
+.form-inline input {
+  display: inline-block;
+  width: auto;
+  padding-right: 15px;
+}
+
+#contact_form .error {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+input[type="submit"] {
+  font-size: 110%;
+  font-weight: 100;
+  background: rgb(255, 255, 255);
+  border-color: #016BC1;
+  box-shadow: 0 3px 0 #0165b6;
+  color: black;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* input[type="submit"]:hover {
+background: ;
+} */
+
+
+
+/* ------------------------------------------------------- Membership Styling -------------------------------------------- */
+.memberships {
+  text-align: center;
+  padding: 10px 0; 
+  margin-top: 40px; 
+  margin-bottom: 40px; 
+}
+
+.banner-member img {
+  width: 100%; 
+  height: 160%;
+}
+
+.banner-member{
+  padding: 40px 0; 
+  text-align: center;
+}
+
+.memberships h1{
+  color: aqua;
+  text-align: center;
+  margin-top: 10px; 
+  margin-bottom: 40px; 
+}
+
+.membership-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.bronze, .silver, .gold {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 2px black;
+  width: 400px;
+  height: 550px;
+  margin: 20px;
+  border-radius: 15px;
+  
+}
+
+.bronze {
+  border: solid 2px black;
+  box-shadow: 1px 1px 20px brown;
+  color: #CD7F32;
+}
+
+.silver {
+  border: solid 2px black;
+  box-shadow: 1px 3px 20px gray;
+  color: #C0C0C0;
+}
+
+.gold {
+  border: solid 2px black; 
+  box-shadow: 1px 1px 20px gold;
+  color: #FFD700;
+}
+
+.price {
+  color: #1078a5;
+  text-align: center;
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  
+}
+
+.memberships button {
+  border-radius: 15px;
+  margin: 20px;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: #00FFFF;
+  color: #3A3B3C;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.memberships button:hover {
+  background-color: rgb(87, 84, 247);
+  color: white;
+}
+
+/* ------------------------------------------------------- Account Styling -------------------------------------------- */
+.account-title {
+  text-align: center;
+}
+
+.reset {
+  margin-left: 13%;
+}
+
+/* Registration form error and success */
+.content-container .error {
+  color: #ff0000;
+  font-size: 14px;
+}
+
+.content-container.success input {
+  border-color: #129700;
+}
+
+.content-container.error input {
+  border-color: #ff0000;
+}
+
+/* Account parent*/
+.profile-container {
+  justify-content: center;
+  align-items: center;
+
+  margin: 50px 25% 50px 25%;
+  padding: 20px;
+  background-color: #444c4e;
+}
+
+.profile-image img {
+  max-width: 161px;
+  max-height: 161px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.block1, 
+.block2, 
+.block3 {
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  width: 65%;
+}
+
+.profile-head {
+  justify-content: center;
+  text-align: center;
+}
+
+.logOption button {
+  margin-top: 15px;
+}
+
+/* ------------------------------------------------------- Cart Styling -------------------------------------------- */
+#cart-content {
+  margin: 80px auto;
+}
+
+#cart-content table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+table thead {
+  border: 1px solid gray;
+  border-left: none;
+  border-right: none;
+}
+
+th {
+  font-weight: bold;
+  font-size: large;
+  padding: 20px 0;
+  text-align: left;
+
+}
+
+.product-det {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+td {
+  padding: 10px 5px;
+}
+
+td input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+
+td img {
+  width: 300px;
+  height: 300px;
+  margin-right: 10px;
+  padding-right: 30px;
+}
+
+th:last-child,
+td:last-child {
+  text-align: right;
+}
+
+/* Cart total Price*/
+.cart-total {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cart-total table {
+  border-top: 3px solid gray;
+  max-width: 400px;
+}
+
+.proceed button {
+  border-radius: 15px;
+  margin: 20px;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-weight: 700;
+  margin-left: 80%;
+}
+
+.proceed button:hover {
+  background-color: rgb(87, 84, 247);
+  color: white;
+}
+
+/* ------------------------------------------------------- Payment Form Styling -------------------------------------------- */
+
+#payment_form checkbox {
+  justify-content: start;
+}
+
+/* ------------------------------------------------------- Admin Styling -------------------------------------------- */
+
+table,
+th,
+td,
+.modifyproducts {
+  border: 1px solid;
+  background-color: white;
+}

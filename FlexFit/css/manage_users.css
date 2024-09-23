@@ -1,0 +1,23 @@
+.modifyusers {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    .modifyusers th,
+    .modifyusers td {
+        font-size: 12px;
+        padding: 5px;
+    }
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.modifyusers td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

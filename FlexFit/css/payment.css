@@ -1,0 +1,36 @@
+
+/* ------------------------------------------------------- Payment Form Styling -------------------------------------------- */
+form {
+  width: 70%;
+  background: #fff;
+  padding: 15px 40px 40px;
+  border: 1px solid #ccc;
+  margin: auto;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  border-radius: 5px;
+}
+
+form h2 {
+  text-align: center;
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+}
+
+input,
+select {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 2px;
+  margin-bottom: 30px;
+}
+
+#payment_form checkbox {
+  justify-content: start;
+}
